@@ -5,13 +5,14 @@ push :
 branches: ["main"]
 
 jobs:
-  runs-on: ubuntu-latest
+react-build:
+  runs-on: window-latest
 
     steps:
-    - name: Checkout
+     - name: Checkout
       uses: actions/checkout@v4
 
-      - name: Install
+    - name: Install
       run: npm install
     - name: Build
       run:  npm run build
